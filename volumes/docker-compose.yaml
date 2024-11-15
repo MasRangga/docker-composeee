@@ -1,0 +1,28 @@
+services:
+  mongodb1:
+    image: mongo:latest
+    container_name: mongodb1
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rangga
+      MONGO_INITDB_ROOT_PASSWORD: rangga
+      MONGO_INITDB_DATABASE: admin
+    volumes:
+      - "mongo-data1:/data/db"
+
+  mongodb2:
+    image: mongo:latest
+    container_name: mongodb2
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rangga
+      MONGO_INITDB_ROOT_PASSWORD: rangga
+      MONGO_INITDB_DATABASE: admin
+    volumes:
+      - "mongo-data2:/data/db"
+
+volumes:
+  mongo-data1:
+  mongo-data2:

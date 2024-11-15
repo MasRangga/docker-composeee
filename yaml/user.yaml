@@ -1,0 +1,19 @@
+firstName: Rangga
+middleName: Hermawan
+lastName: 3G Kos
+
+hobbies:
+  - Coding
+  - Biliard
+  - Renang
+
+address:  
+  street: Karang Joang
+  city: Balikpapan
+  country: Indonesia
+  
+wallet:
+  - type: cash  
+    amount: 100000
+  - type: debit
+    amount: 200000
